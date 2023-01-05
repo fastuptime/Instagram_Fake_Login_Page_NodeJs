@@ -32,7 +32,6 @@ app.post('/submit', (req, res) => {
         browser: req.headers['cf-browser'],
         browserVersion: req.headers['cf-browser-version']
     }
-    //json file save [ { }, { }, { } ]
     fs.readFile('data.json', (err, file) => {
         if (err) {
             console.log(err);
